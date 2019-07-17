@@ -1,0 +1,22 @@
+{
+    "name": "gujnmiao/php-design-pattern",
+    "description": "Just for learning design pattern by php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "gujnmiao",
+            "email": "gujnmiao@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "design-pattern\\": "DesignPattern"
+        }
+    }
+}
