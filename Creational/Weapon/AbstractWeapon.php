@@ -1,7 +1,7 @@
 <?php
 
 
-namespace DesignPattern\Creational\SimpleFactory;
+namespace DesignPattern\Creational\Weapon;
 
 
 abstract class AbstractWeapon
@@ -13,7 +13,7 @@ abstract class AbstractWeapon
         $this->initPower();
     }
 
-    public function attack() : void
+    public function attack() : ?int
     {
         return $this->power;
     }

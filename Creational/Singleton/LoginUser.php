@@ -14,7 +14,7 @@ class LoginUser
     /**
      * @var
      */
-    private $userInfo;
+    private $userInfo = [];
 
     private function __construct()
     {
@@ -40,7 +40,7 @@ class LoginUser
     /**
      * @return mixed
      */
-    public function getUserInfo()
+    public function getUserInfo() : ?array
     {
         return $this->userInfo;
     }

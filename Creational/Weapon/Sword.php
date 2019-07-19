@@ -1,7 +1,7 @@
 <?php
 
 
-namespace DesignPattern\Creational\SimpleFactory;
+namespace DesignPattern\Creational\Weapon;
 
 
 class Sword extends AbstractWeapon

@@ -9,7 +9,7 @@ use DesignPattern\Creational\Weapon\WeaponConstant;
 
 class WeaponFactory
 {
-    public function create(int $weaponConstant) : ?AbstractWeapon
+    public static function create(int $weaponConstant) : ?AbstractWeapon
     {
         switch ($weaponConstant) {
             case WeaponConstant::SWORD :
