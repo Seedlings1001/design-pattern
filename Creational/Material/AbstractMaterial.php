@@ -6,5 +6,5 @@ namespace DesignPattern\Creational\Material;
 
 abstract class AbstractMaterial
 {
-    protected $attr = [];
+    public $attr = [];
 }

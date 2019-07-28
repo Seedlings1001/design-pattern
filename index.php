@@ -1,20 +1,10 @@
 <?php
 require 'vendor/autoload.php';
 
-use DesignPattern\Creational\MethodFactory\SwordFactory;
-use DesignPattern\Creational\SimpleFactory\WeaponFactory;
-use DesignPattern\Creational\Weapon\WeaponConstant;
+use DesignPattern\Creational\Prototype\WeaponFactory;
+use DesignPattern\Creational\Weapon\Sword;
+use DesignPattern\Creational\Material\Diamond;
 
-//
-//spl_autoload_register(function ($class) {
-//    $file = str_replace('\\', DIRECTORY_SEPARATOR, $class) . '.php';
-//    if (file_exists($file)) {
-//        require $file;
-//        return true;
-//    }
-//    return false;
-//});
-//
-var_dump(WeaponFactory::create(WeaponConstant::SPEAR));
-$sword = new SwordFactory();
-var_dump($sword->create());
+$factory = new WeaponFactory(new Sword, new Diamond);
+var_dump($factory);
+var_dump($factory->getMaterial());
