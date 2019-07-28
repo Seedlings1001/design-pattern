@@ -4,7 +4,9 @@
 namespace DesignPattern\Creational\AbstractFactory;
 
 
-class AbstractFactory
+abstract class AbstractFactory
 {
+    abstract function createWeapon();
 
+    abstract function createMaterial();
 }
