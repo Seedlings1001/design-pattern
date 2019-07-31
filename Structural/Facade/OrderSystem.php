@@ -6,8 +6,14 @@ namespace DesignPattern\Structural\Facade;
 
 class OrderSystem
 {
-    public function createOrder()
+    /**
+     * 创建订单
+     *
+     * @param string $productName
+     * @param int $quantity
+     */
+    public function createOrder(string $productName, int $quantity)
     {
-        echo "正在创建订单..." . PHP_EOL;
+
     }
 }

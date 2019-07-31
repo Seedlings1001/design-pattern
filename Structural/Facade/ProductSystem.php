@@ -6,8 +6,14 @@ namespace DesignPattern\Structural\Facade;
 
 class ProductSystem
 {
-    public function calcPrice()
+    /**
+     * 计算价格
+     *
+     * @param string $productName
+     * @param int $quantity
+     */
+    public function calcPrice(string $productName, int $quantity)
     {
-        echo "正在计算商品价格..." . PHP_EOL;
+
     }
 }

@@ -9,30 +9,30 @@ class Facade
     /**
      * @var ProductSystem
      */
-    private $productLogic;
+    private $productSystem;
 
     /**
      * @var OrderSystem
      */
-    private $orderLogic;
+    private $orderSystem;
 
     /**
      * @var PaymentSystem
      */
-    private $paymentLogic;
+    private $paymentSystem;
 
     public function __construct()
     {
-        $this->productLogic = new ProductSystem();
-        $this->orderLogic = new OrderSystem();
-        $this->paymentLogic = new PaymentSystem();
+        $this->productSystem = new ProductSystem();
+        $this->orderSystem = new OrderSystem();
+        $this->paymentSystem = new PaymentSystem();
     }
 
     public function Buy()
     {
-        $this->productLogic->calcPrice();
-        $this->orderLogic->createOrder();
-        $this->paymentLogic->payOrder();
+        $this->productSystem->calcPrice();
+        $this->orderSystem->createOrder();
+        $this->paymentSystem->payOrder();
     }
 }
 

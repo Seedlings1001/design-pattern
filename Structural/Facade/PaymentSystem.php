@@ -6,8 +6,13 @@ namespace DesignPattern\Structural\Facade;
 
 class PaymentSystem
 {
-    public function payOrder()
+    /**
+     * 支付订单
+     *
+     * @param string $orderId
+     */
+    public function payOrder(string $orderId)
     {
-        echo "正在进行支付..." . PHP_EOL;
+
     }
 }
