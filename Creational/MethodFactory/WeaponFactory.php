@@ -4,7 +4,7 @@
 namespace DesignPattern\Creational\MethodFactory;
 
 
-use DesignPattern\Creational\Weapon\AbstractWeapon;
+use DesignPattern\Extension\Weapon\AbstractWeapon;
 
 interface WeaponFactory
 {

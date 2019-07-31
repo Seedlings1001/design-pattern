@@ -1,7 +1,7 @@
 <?php
 
 
-namespace DesignPattern\Creational\Weapon;
+namespace DesignPattern\Extension\Weapon;
 
 
 class Spear extends AbstractWeapon

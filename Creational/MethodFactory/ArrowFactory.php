@@ -4,8 +4,8 @@
 namespace DesignPattern\Creational\MethodFactory;
 
 
-use DesignPattern\Creational\Weapon\AbstractWeapon;
-use DesignPattern\Creational\Weapon\Arrow;
+use DesignPattern\Extension\Weapon\AbstractWeapon;
+use DesignPattern\Extension\Weapon\Arrow;
 
 class ArrowFactory implements WeaponFactory
 {

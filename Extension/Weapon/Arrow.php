@@ -1,7 +1,7 @@
 <?php
 
 
-namespace DesignPattern\Creational\Weapon;
+namespace DesignPattern\Extension\Weapon;
 
 
 class Arrow extends AbstractWeapon

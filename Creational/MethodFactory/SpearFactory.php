@@ -4,8 +4,8 @@
 namespace DesignPattern\Creational\MethodFactory;
 
 
-use DesignPattern\Creational\Weapon\AbstractWeapon;
-use DesignPattern\Creational\Weapon\Spear;
+use DesignPattern\Extension\Weapon\AbstractWeapon;
+use DesignPattern\Extension\Weapon\Spear;
 
 class SpearFactory implements WeaponFactory
 {

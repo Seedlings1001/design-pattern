@@ -4,8 +4,8 @@
 namespace DesignPattern\Creational\SimpleFactory;
 
 
-use DesignPattern\Creational\Weapon\AbstractWeapon;
-use DesignPattern\Creational\Weapon\WeaponConstant;
+use DesignPattern\Extension\Weapon\AbstractWeapon;
+use DesignPattern\Extension\Weapon\WeaponConstant;
 
 class WeaponFactory
 {

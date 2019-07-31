@@ -1,7 +1,7 @@
 <?php
 
 
-namespace DesignPattern\Creational\Material;
+namespace DesignPattern\Extension\Material;
 
 
 
