@@ -4,7 +4,9 @@
 namespace DesignPattern\Extension\Weapon;
 
 
-abstract class AbstractWeapon
+use DesignPattern\Structural\Composite\AbstractUnit;
+
+abstract class AbstractWeapon extends AbstractUnit
 {
     protected $power;
 

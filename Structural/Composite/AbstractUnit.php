@@ -47,13 +47,14 @@ abstract class AbstractUnit
     }
 
     /**
-     * 访问者
+     * 允许访问者
      *
      * @param AbstractVisitor $visitor
+     * @return mixed
      */
     public function accept(AbstractVisitor $visitor)
     {
-        $method = "visit" . self::class;
-        $visitor->{$method}($this);
+        $method = 'visit' . basename(str_replace('\\', '/', get_class($this)));
+        return $visitor->{$method}($this);
     }
 }

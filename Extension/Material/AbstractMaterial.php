@@ -4,7 +4,9 @@
 namespace DesignPattern\Extension\Material;
 
 
-abstract class AbstractMaterial
+use DesignPattern\Structural\Composite\AbstractUnit;
+
+abstract class AbstractMaterial extends AbstractUnit
 {
     public $attr = [];
 }
