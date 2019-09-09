@@ -8,17 +8,26 @@ use DesignPattern\Structural\Composite\AbstractUnit;
 
 abstract class AbstractWeapon extends AbstractUnit
 {
-    protected $power;
+    /**
+     * 攻击力
+     *
+     * @var int
+     */
+    private $attackPower;
 
-    public function __construct()
+    /**
+     * @return int
+     */
+    public function getAttackPower(): int
     {
-        $this->initPower();
+        return $this->attackPower;
     }
 
-    public function attack() : ?int
+    /**
+     * @param int $attackPower
+     */
+    public function setAttackPower(int $attackPower): void
     {
-        return $this->power;
+        $this->attackPower = $attackPower;
     }
-
-    abstract function initPower() : void;
 }

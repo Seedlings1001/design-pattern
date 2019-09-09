@@ -4,7 +4,7 @@
 namespace DesignPattern\Extension\Monster;
 
 
-class RedSlimeMonster extends AbstractMonster
+class RedSlime extends AbstractMonster
 {
     public function __construct()
     {

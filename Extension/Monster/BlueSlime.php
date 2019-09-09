@@ -4,10 +4,10 @@
 namespace DesignPattern\Extension\Monster;
 
 
-class YellowSlimeMonster extends AbstractMonster
+class BlueSlime extends AbstractMonster
 {
     public function __construct()
     {
-        $this->setBlood(50);
+        $this->setBlood(150);
     }
 }

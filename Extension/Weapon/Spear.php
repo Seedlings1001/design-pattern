@@ -6,8 +6,8 @@ namespace DesignPattern\Extension\Weapon;
 
 class Spear extends AbstractWeapon
 {
-    public function initPower() : void
+    public function __construct()
     {
-        $this->power = 5;
+        $this->setAttackPower(10);
     }
 }

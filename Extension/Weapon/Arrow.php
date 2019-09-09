@@ -6,8 +6,8 @@ namespace DesignPattern\Extension\Weapon;
 
 class Arrow extends AbstractWeapon
 {
-    public function initPower() : void
+    public function __construct()
     {
-        $this->power = 10;
+        $this->setAttackPower(15);
     }
 }

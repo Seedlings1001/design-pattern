@@ -6,8 +6,8 @@ namespace DesignPattern\Extension\Weapon;
 
 class Sword extends AbstractWeapon
 {
-    public function initPower() : void
+    public function __construct()
     {
-        $this->power = 20;
+        $this->setAttackPower(20);
     }
 }

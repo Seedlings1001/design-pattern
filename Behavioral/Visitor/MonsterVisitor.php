@@ -16,7 +16,7 @@ class MonsterVisitor extends AbstractVisitor
         }
     }
 
-    public function visitYellowSlimeMonster(AbstractMonster $abstractMonster)
+    public function visitYellowSlime(AbstractMonster $abstractMonster)
     {
         return $this->visit($abstractMonster);
     }
