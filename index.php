@@ -1,10 +1,8 @@
 <?php
 require 'vendor/autoload.php';
 
-use DesignPattern\Creational\Prototype\WeaponFactory;
-use DesignPattern\Creational\Weapon\Sword;
-use DesignPattern\Creational\Material\Diamond;
+use DesignPattern\Structural\Adapter\EuroAdapter;
 
-$factory = new WeaponFactory(new Sword, new Diamond);
-var_dump($factory);
-var_dump($factory->getMaterial());
+$EuroAdapter = new EuroAdapter();
+var_dump($EuroAdapter->requestCalculator(10, 20));
+
