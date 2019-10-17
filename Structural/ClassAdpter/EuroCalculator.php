@@ -3,7 +3,12 @@
 
 namespace DesignPattern\Structural\ClassAdpter;
 
-
+/**
+ * 欧元结算
+ *
+ * Class EuroCalculator
+ * @package DesignPattern\Structural\ClassAdpter
+ */
 class EuroCalculator
 {
     /**

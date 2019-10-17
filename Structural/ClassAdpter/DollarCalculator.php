@@ -3,7 +3,12 @@
 
 namespace DesignPattern\Structural\ClassAdpter;
 
-
+/**
+ * 美元结算
+ *
+ * Class DollarCalculator
+ * @package DesignPattern\Structural\ClassAdpter
+ */
 class DollarCalculator
 {
     /**
