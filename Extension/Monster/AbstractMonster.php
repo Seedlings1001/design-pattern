@@ -6,7 +6,12 @@ namespace DesignPattern\Extension\Monster;
 
 use DesignPattern\Structural\Composite\AbstractUnit;
 
-
+/**
+ * 怪物抽象类
+ *
+ * Class AbstractMonster
+ * @package DesignPattern\Extension\Monster
+ */
 abstract class AbstractMonster extends AbstractUnit
 {
     /**

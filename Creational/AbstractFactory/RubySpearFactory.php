@@ -4,9 +4,15 @@
 namespace DesignPattern\Creational\AbstractFactory;
 
 
-use DesignPattern\Creational\Material\Ruby;
-use DesignPattern\Creational\Weapon\Spear;
+use DesignPattern\Extension\Material\Ruby;
+use DesignPattern\Extension\Weapon\Spear;
 
+/**
+ * 红宝石长矛
+ *
+ * Class RubySpearFactory
+ * @package DesignPattern\Creational\AbstractFactory
+ */
 class RubySpearFactory extends AbstractFactory
 {
 

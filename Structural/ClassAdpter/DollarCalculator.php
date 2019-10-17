@@ -1,7 +1,7 @@
 <?php
 
 
-namespace DesignPattern\Structural\ClassAadpter;
+namespace DesignPattern\Structural\ClassAdpter;
 
 
 class DollarCalculator

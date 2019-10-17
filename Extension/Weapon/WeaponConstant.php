@@ -3,7 +3,12 @@
 
 namespace DesignPattern\Extension\Weapon;
 
-
+/**
+ * 常量
+ *
+ * Class WeaponConstant
+ * @package DesignPattern\Extension\Weapon
+ */
 class WeaponConstant
 {
     const SWORD = 1;

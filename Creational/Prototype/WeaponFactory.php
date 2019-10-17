@@ -4,8 +4,9 @@
 namespace DesignPattern\Creational\Prototype;
 
 
-use DesignPattern\Creational\Material\AbstractMaterial;
-use DesignPattern\Creational\Weapon\AbstractWeapon;
+
+use DesignPattern\Extension\Material\AbstractMaterial;
+use DesignPattern\Extension\Weapon\AbstractWeapon;
 
 class WeaponFactory
 {
@@ -25,11 +26,21 @@ class WeaponFactory
         $this->material = $material;
     }
 
+    /**
+     * 武器原型
+     *
+     * @return AbstractWeapon
+     */
     public function getWeapon()
     {
         return clone $this->weapon;
     }
 
+    /**
+     * 材料原型
+     *
+     * @return AbstractMaterial
+     */
     public function getMaterial()
     {
         return clone $this->material;

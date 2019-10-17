@@ -7,8 +7,20 @@ namespace DesignPattern\Creational\SimpleFactory;
 use DesignPattern\Extension\Weapon\AbstractWeapon;
 use DesignPattern\Extension\Weapon\WeaponConstant;
 
+/**
+ * 简单工厂模式
+ *
+ * Class WeaponFactory
+ * @package DesignPattern\Creational\SimpleFactory
+ */
 class WeaponFactory
 {
+    /**
+     * 创造武器
+     *
+     * @param int $weaponConstant
+     * @return AbstractWeapon|null
+     */
     public function create(int $weaponConstant) : ?AbstractWeapon
     {
         switch ($weaponConstant) {

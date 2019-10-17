@@ -6,6 +6,12 @@ namespace DesignPattern\Structural\Decorator;
 
 use DesignPattern\Extension\Weapon\AbstractWeapon;
 
+/**
+ * 武器装饰器
+ *
+ * Class WeaponDecorator
+ * @package DesignPattern\Structural\Decorator
+ */
 class WeaponDecorator
 {
     /**
@@ -36,8 +42,11 @@ class WeaponDecorator
         $this->weapon = $weapon;
     }
 
+    /**
+     * 装饰器
+     */
     public function setAttackPower()
     {
-        return $this->setWeapon($this->weapon->getAttackPower() + 10);
+        $this->weapon->setAttackPower($this->weapon->getAttackPower() + 10);
     }
 }

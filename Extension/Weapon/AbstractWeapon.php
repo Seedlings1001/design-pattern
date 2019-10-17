@@ -6,6 +6,12 @@ namespace DesignPattern\Extension\Weapon;
 
 use DesignPattern\Structural\Composite\AbstractUnit;
 
+/**
+ * 武器抽象类
+ *
+ * Class AbstractWeapon
+ * @package DesignPattern\Extension\Weapon
+ */
 abstract class AbstractWeapon extends AbstractUnit
 {
     /**
@@ -13,7 +19,7 @@ abstract class AbstractWeapon extends AbstractUnit
      *
      * @var int
      */
-    private $attackPower;
+    private $attackPower = 0;
 
     /**
      * @return int

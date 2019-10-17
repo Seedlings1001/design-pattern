@@ -4,9 +4,15 @@
 namespace DesignPattern\Creational\AbstractFactory;
 
 
-use DesignPattern\Creational\Material\Gold;
-use DesignPattern\Creational\Weapon\Sword;
+use DesignPattern\Extension\Material\Gold;
+use DesignPattern\Extension\Weapon\Sword;
 
+/**
+ * 镀金的宝剑
+ *
+ * Class GoldSwordFactory
+ * @package DesignPattern\Creational\AbstractFactory
+ */
 class GoldSwordFactory extends AbstractFactory
 {
 

@@ -3,24 +3,37 @@
 
 namespace DesignPattern\Creational\Singleton;
 
-
+/**
+ * 单例模式
+ *
+ * Class LoginUser
+ * @package DesignPattern\Creational\Singleton
+ */
 class LoginUser
 {
     /**
-     * @var
+     * @var LoginUser
      */
     private static $instance;
 
     /**
-     * @var
+     * @var array
      */
     private $userInfo = [];
 
+    /**
+     * 禁止外部实例化
+     *
+     * LoginUser constructor.
+     */
     private function __construct()
     {
 
     }
 
+    /**
+     * 禁止克隆
+     */
     private function __clone()
     {
 
